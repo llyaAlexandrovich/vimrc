@@ -234,6 +234,11 @@ Plug 'doums/darcula'
 Plug 'RRethy/vim-illuminate'
 let g:Illuminate_delay = 30
 
+Plug 'rhysd/vim-clang-format'
+let g:clang_format#code_style = 'google'
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>f :ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>f :ClangFormat<CR>
+
 call plug#end()
 
 
