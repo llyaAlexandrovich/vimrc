@@ -138,6 +138,11 @@ nnoremap Y y$
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
+" Special hot-key for clang-format tool.
+nnoremap <C-K> :%!clang-format<CR>
+vnoremap <C-K> :%!clang-format<CR>
+
+
 
 " ===== Window =====
 
